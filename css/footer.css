@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.container-footer{
+
+    display: flex;
+    justify-content:center;
+    padding-top: 5%;
+    height: 50%;
+    background-color: #E0E3E5;
+    gap: 60px;
+    padding: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.links-footer i{
+    width: 42px;
+}
+
+.paragrafo-footer{
+    font-size: 15px;
+}
+
+.ancora-footer{
+    text-decoration: none;
+    color: black;
+}
+
+.titulo-footer{
+    font-size: 24px;
+    text-decoration: none;
+
+}
+
+.contato-footer{
+    display: flex;
+    
+    text-align: center;
+    justify-content: center;
+    background: #E0E3E5;
+    gap: 20px;
+    padding: 10px;
+}
+.contato-footer i{
+    font-family: 'Poppins',sans-serif;
+}
+
+.copyright{
+    display: flex;
+    justify-content: center;
+    color: white;
+    background-color: #02383C;
+    padding: 10px;
+}
+.copyright p{
+    display: flex;
+    justify-content: center;
+    font-size: 12px;
+}

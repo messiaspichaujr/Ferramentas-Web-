@@ -1,0 +1,56 @@
+footer {
+    background-color: #E0E3E5;
+    padding: 20px;
+    
+}
+
+.container-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 60px;
+}
+
+.links-footer {
+    text-align: center;
+}
+
+.titulo-footer {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.ancora-footer {
+    text-decoration: none;
+    color: black;
+}
+
+.paragrafo-footer {
+    font-size: 15px;
+}
+
+.contato-footer {
+    text-align: center;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contato-footer i {
+    font-family: 'Poppins', sans-serif;
+    margin-right: 5px;
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 20px;
+    color: white;
+    background-color: #02383C;
+}
+
+.conteudo {
+    display: none;
+}
+/* Inicio footer*/

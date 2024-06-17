@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #02383C;
+}
+
+.cor-hamburguer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/* ESTILO DO MENU HAMBURGUER */
+
+.menu {
+    margin-left: 30px;
+    margin-top: -40px;
+}
+
+.menu .menu-faketrigger {
+    position: absolute;
+    z-index: 1000;
+    height: 35px;
+    width: 35px;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.menu .menu-faketrigger:checked~ul {
+    background-color: #fff;
+}
+
+
+.menu .menu-lines {
+    position: absolute;
+    z-index: 999;
+    width: 35px;
+    height: 35px;
+}
+
+.menu .menu-lines span {
+    display: block;
+    width: 35px;
+    height: 5px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    border-radius: 3px;
+    transition: all ease .2s;
+}
+
+.menu .menu-faketrigger:checked~.menu-lines span {
+    background-color: #02383C;
+}
+
+.menu .menu-faketrigger:checked~.menu-lines span:nth-child(1) {
+    transform-origin: 0% 0%;
+    transform: rotate(45deg) scaleX(1.25);
+}
+
+.menu .menu-faketrigger:checked~.menu-lines span:nth-child(2) {
+    opacity: 0;
+}
+
+.menu .menu-faketrigger:checked~.menu-lines span:nth-child(3) {
+    transform-origin: 0% 100%;
+    transform: rotate(-45deg) scaleX(1.25);
+}
+
+.menu ul {
+    position: absolute;
+    z-index: 998;
+    left: 0;
+    top: 0;
+    width: 300px;
+    height: calc(100vh - 100px);
+    padding-top: 50px;
+    background-color: #fff;
+    margin-left: -300px;
+    transition: all ease .2s;
+}
+
+.menu .menu-faketrigger:checked~ul {
+    margin-left: 0;
+
+}
+
+.menu ul li {
+    margin-top: 30px;
+    padding: 0px 30px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 22px;
+    transition: all ease .3s;
+
+}
+
+.menu ul li a:hover {
+    color: #999;
+}
+
+/* ESTILO DO SEARCH BAR */
+
+.search-container {
+    position: relative;
+    height: 40px;
+    width: 490px;
+    margin: 0 auto;
+}
+input#search-bar {
+    width: 100%;
+    height: 45px;
+    padding: 0 20px;
+    font-size: 1rem;
+    border: 1px solid #D0CFCE;
+    outline: none;
+    border-radius: 10px;
+}
+
+.search-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 75px;  /* Aumenta a largura do ícone */
+    height: 75px; /* Aumenta a altura do ícone */
+}
+
+/* ESTILO DOS ICONES */
+
+.icones-nav {
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    gap: 20px;
+}
+
+.icones-nav img {
+    width: 30px;
+    height: 30px;
+
+}

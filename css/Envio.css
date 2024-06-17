@@ -1,0 +1,126 @@
+/*Estilo Body*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+.suporte{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 80px;
+
+
+}
+
+body, html {
+    height: 100%;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Estilo do conteúdo principal */
+.section {
+    flex: 1;
+    padding: 10px;
+    width: 70vw;
+    margin: 0 auto;
+}
+
+.painel {
+    font-size: 23px;
+    margin-bottom: 25px;
+    border-bottom: 1px solid #61B0B7;
+    overflow: hidden;
+    font-family: "Poppins", sans-serif;
+}
+
+.content p {
+    font-size: 18px;
+    padding-left: 40px;
+    font-family: "Poppins", sans-serif;
+}
+
+.hidden {
+    display: none;
+}
+body{
+    position: relative;
+}
+
+/*teste */
+
+
+@media screen and (max-width: 760px) {
+    
+    .section {
+        width: 90vw; /* Reduz a largura do contêiner */
+    }
+
+    .painel {
+        width: 90%; /* Reduz a largura do painel */
+        margin-left: auto;
+        margin-right: auto; /* Centraliza o painel */
+    }
+
+    .content p {
+        padding-left: 20px; /* Ajusta o recuo do texto */
+    }.subpainel {
+        width: 100%; /* Altera a largura para ocupar toda a largura disponível */
+    }
+
+    .teste {
+        margin: 0; /* Remove as margens */
+    }
+
+    .topicos {
+        margin: 0 auto; /* Centraliza o bloco de "Mais tópicos" */
+        width: fit-content; /* Ajusta a largura automaticamente */
+    }
+
+    .suporte {
+        text-align: center; /* Centraliza o texto */
+        margin: 20px auto; /* Centraliza o bloco de suporte */
+    }
+
+    .container-footer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        grid-gap: 20px;
+    }
+
+    .links-footer {
+        margin: 20px;
+        text-align: center;
+    }
+
+    .titulo-footer {
+        margin-bottom: 10px;
+    }
+
+    .ancora-footer {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    .paragrafo-footer {
+        margin: 5px 0;
+    }
+
+    .contato-footer {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .copyright {
+        text-align: center;
+        margin-top: 20px;
+    }
+}

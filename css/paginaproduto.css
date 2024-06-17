@@ -1,0 +1,29 @@
+.container-produto {
+    display: flex;
+    flex-direction: row;
+    margin: 10rem;
+    gap: 25rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.imagem-do-produto {
+    margin-left: 200px;
+
+}
+.imagem-do-produto img{
+    width: 38rem;
+}
+
+.produto-pagina {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    gap: 10px;
+    padding-top: 3rem;
+  }
+
+.produto-pagina button{
+    width: 100px;
+    height: 25px;
+    border-radius: 20px;
+  }

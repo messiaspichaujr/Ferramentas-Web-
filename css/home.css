@@ -1,0 +1,75 @@
+
+.titulo-home{
+    color: black;
+    font-size: 25px;
+    margin-left: 80px;
+    margin-top: 10px;
+    background-color: white;
+}
+
+/* ESTILO DOS PRODUTOS */
+
+.card-de-produtos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 80px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.imagem-do-produto {
+    width: 100%;
+    max-width: 300px;
+}
+
+.infos-do-produto h1 {
+    font-size: 1.5em;
+    margin: 20px 0 10px;
+}
+
+.cartão-juros {
+    font-size: 1.2em;
+    color: red;
+    margin: 10px 0;
+}
+
+.preco-avista {
+    font-size: 1.5em;
+    color: green;
+    margin: 10px 0 20px;
+}
+
+.adicionar-carrinho {
+    background-color: #eee;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer; 
+    color: black;
+    font-family: 'Poppins', sans-serif;
+}
+
+.adicionar-carrinho a{
+    text-decoration: none;
+    color: black;
+}
+
+.adicionar-carrinho:hover {
+    background-color: #ddd;
+}
+
+/* ESTILO DOS BONUS DO SITE */
+
+.bonus-site{
+    display: flex;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+}
