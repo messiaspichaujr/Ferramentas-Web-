@@ -4,12 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>menu-hamburguer</title>
+    <title>Home Page</title>
     <link rel="stylesheet" href="css/navbar.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/contato.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
-    <link rel="stylesheet" href="css/paginaproduto.css">
 </head>
 
 <body>
@@ -42,20 +42,52 @@
         </div>
 
     </div>
-    <main class="container-produto">
-        <div class="imagem-do-produto">
-            <img src="assets/Assets do produto.png" alt="foto-jbl">
+
+    <main class="container-main flex">
+
+        <div class="formulario">
+
+            <h1 class="principal">Fale conosco</h1>
+            <form action="#">
+                <div class="form-group">
+                    <label for="nome">Nome Completo:</label>
+                    <input type="text" id="nome" name="nome" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="assunto">Assunto:</label>
+                    <input type="text" id="assunto" name="assunto" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+                </div>
+
+                <button type="submit" id="formulario" class="button_contact">Enviar</button>
+
+                <div class="flex">
+                    <a href=""><img src="assets/icons8-whatsapp-48.svg" alt=""></a>
+
+                    <a href=""><label for="email">Fale com nossos atendentes!</label></a>
+                </div>
+
+            </form>
+
+
+
+
+
         </div>
-        <div class="produto-pagina">
-            <p>SOUND COMPANY</p>
-            <h1>Caixa de Som JBL Bombox 3</h1>
-            <p>JBL ORIGINAL PRO SOUND. Preencha o ambiente com um som JBL Original Pro Sound potente com graves
-                profundos e potentes. A JBL Boombox 3 Wi-Fi faz parecer que você acabou de entrar no meio de um show.
-            </p>
-            <h1>R$ 2727,52</h1>
-            <p>ou 12x de 227,36</p>
-            <button><a href="pagamento.html" class="comprar-button">COMPRAR</a></button>
-        </div>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3576.6852123047533!2d-48.85361492530427!3d-26.304302968056977!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94deb047b2a98c67%3A0x8101cf18a613c42a!2sCentro%20Universit%C3%A1rio%20Cat%C3%B3lica%20de%20Santa%20Catarina%20-%20Joinville!5e0!3m2!1spt-BR!2sbr!4v1718658386387!5m2!1spt-BR!2sbr"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
 
     </main>
 

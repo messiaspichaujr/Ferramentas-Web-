@@ -26,4 +26,9 @@
     width: 100px;
     height: 25px;
     border-radius: 20px;
-  }
+}
+
+.comprar-button{
+    text-decoration: none;
+    color: black;
+}
