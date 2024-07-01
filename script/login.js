@@ -1,4 +1,4 @@
-document.getElementById("openModal").addEventListener("click", function() {
+document.getElementById(".openModal").addEventListener("click", function() {
     document.getElementById("modal").style.display = "flex";
 });
 
@@ -7,5 +7,5 @@ document.querySelector(".confirm").addEventListener("click", function() {
 });
 
 function novaSenha(){
-    window.location.href = "novaSenha.html"
+    window.location.href = "/public/novaSenha.html"
 }

@@ -5,42 +5,71 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro</title>
-    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="/css/login.css">
+    <link rel="stylesheet" href="/css/barnav.css">
+    <link rel="stylesheet" href="/css/fot.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <header></header>
-    <main>
+    <nav>
+        <div class="cor-hamburguer">
+            <nav class="menu">
+                <input type="checkbox" class="menu-faketrigger" />
+                <div class="menu-lines">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Configurações</a></li>
+                    <li><a href="#">Sair</a></li>
+                </ul>
+            </nav>
+            <form class="search-container">
+                <input type="text" id="search-bar" placeholder="pesquise">
+                <a href="#"><img class="search-icon"
+                        src="http://www.endlessicons.com/wp-content/uploads/2012/12/search-icon.png"></a>
+            </form>
+            <div class="icones-nav">
+                <a href="#"><img src="/assets/Carrinho (1).png" alt="icone do usuario"></a>
+                <a href="/login.html"><img src="/assets/User (2).png" alt="icone do usuario"></a>
+            </div>
+        </div>
+    </nav>
+    <main class="login-container">
         <div class="box-main">
             <h2>Cadastre-se</h2>
-            <div class="colunas">
+            <form class="colunas"  id="form" action="home.html" method="get">
                 <div class="col-1">
-                    <form class="formulario">
-                        <label for="">Nome completo:</label>
-                        <input class="campo" type="text" name="nome" id="nomeCad" placeholder="Nome Sobrenome">
-                        <label for="">CPF:</label>
-                        <input class="campo" type="text" name="cpf" id="cpfCad" placeholder="123.456.789-00">
-                        <label for="">Data de nascimento:</label>
-                        <input class="campo" type="date" name="nascimento" id="data">
-                        <label for="">Telefone/Celular:</label>
-                        <input class="campo" type="tel" name="telefone" id="telefone" placeholder="(00) 0000-0000">
-                    </form>
-                </div>
-                <div class="col-2">
-                    <form class="formulario">
-                        <label for="">E-mail:</label>
-                        <input class="campo" type="email" name="email" id="emailCad" placeholder="nome@gmail.com">
-                        <label for="">Crie sua senha:</label>
-                        <input class="campo" type="password" name="senha" id="senha1" placeholder="********">
-                        <label for="">Confirme sua senha:</label>
-                        <input class="campo" type="password" name="confirmar-s" id="senha2" placeholder="********">
-                        <input class="btn" type="button" value="Finalizar">
-                    </form>
-                    <div class="log-cad">
-                        <p>Já tem uma conta?</p>
-                        <a class="btn-logCad" href="../login.html">Login</a>
+                    <div class="formulario">
+                        <label for="nome">Nome completo:</label>
+                        <input class="campo" type="text" name="nome" id="nomeCad" placeholder="Nome Sobrenome" autocomplete="name" required>
+                        <label for="cpf">CPF:</label>
+                        <input class="campo" type="text" name="cpf" id="cpfCad" placeholder="123.456.789-00" autocomplete="tax-id" required>
+                        <label for="data">Data de nascimento:</label>
+                        <input class="campo" type="date" name="nascimento" id="data" autocomplete="bday" required>
+                        <label for="telefone">Telefone/Celular:</label>
+                        <input class="campo" type="tel" name="telefone" id="telefone" placeholder="(00) 0000-0000" autocomplete="tel" required>
                     </div>
                 </div>
-            </div>
+                <div class="col-2">
+                    <div class="formulario">
+                        <label for="email">E-mail:</label>
+                        <input class="campo" type="email" name="email" id="emailCad" placeholder="nome@gmail.com" autocomplete="email" required>
+                        <label for="senha">Crie sua senha:</label>
+                        <input class="campo" type="password" name="senha" id="senha1" placeholder="********" autocomplete="new-password" required>
+                        <label for="senha">Confirme sua senha:</label>
+                        <input class="campo" type="password" name="confirmar-s" id="senha2" placeholder="********" autocomplete="new-password" required>
+                        <input class="btn" type="submit" value="Finalizar">
+                    </div>
+                    <div class="log-cad">
+                        <p>Já tem uma conta?</p>
+                        <a class="btn-logCad" href="/login.html">Login</a>
+                    </div>
+                </div>
+            </form>
         </div>
     </main>
     <footer>
@@ -67,7 +96,7 @@
             </div>
             <div class="links-footer">
                 <a href="" class="ancora-footer"><h3 class="titulo-footer">Formas de Pagamento</h3></a>
-                <img src="assets/Bandeiras do Cartão.png" alt="Bandeiras do cartão">
+                <img src="/assets/Bandeiras do Cartão.png" alt="Bandeiras do cartão">
             </div>
             <div class="links-footer">
                 <a href="" class="ancora-footer"><h3 class="titulo-footer">Nossas Redes</h3></a>

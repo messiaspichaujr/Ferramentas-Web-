@@ -5,25 +5,55 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="/css/login.css">
+    <link rel="stylesheet" href="/css/barnav.css">
+    <link rel="stylesheet" href="/css/fot.css">
+    <script src="/script/login.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <header></header>
-    <main>
+    <nav>
+        <div class="cor-hamburguer">
+            <nav class="menu">
+                <input type="checkbox" class="menu-faketrigger" />
+                <div class="menu-lines">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Configurações</a></li>
+                    <li><a href="#">Sair</a></li>
+                </ul>
+            </nav>
+            <form class="search-container">
+                <input type="text" id="search-bar" placeholder="pesquise">
+                <a href="#"><img class="search-icon"
+                        src="http://www.endlessicons.com/wp-content/uploads/2012/12/search-icon.png"></a>
+            </form>
+            <div class="icones-nav">
+                <a href="#"><img src="/assets/Carrinho (1).png" alt="icone do usuario"></a>
+                <a href="/login.html"><img src="/assets/User (2).png" alt="icone do usuario"></a>
+            </div>
+        </div>
+    </nav>
+    <main class="login-container">
         <div class="box-main">
             <h2>Login</h2>
             <div class="col-1">
-                <form class="formulario">
-                    <label for="">E-mail ou CPF:</label>
-                    <input class="campo" type="email" id="email-cpf" placeholder="nome@gmail.com">
-                    <label for="">Senha:</label>
-                    <input class="campo" type="password" id="senha" placeholder="********">
-                    <a class="recuperar" href="./public/recuperar.html">Esqueceu a senha?</a>
-                    <input class="btn" type="button" value="Entrar">
+                <form class="formulario" id="form" action="home.html" method="get">
+                    <label for="email-cpf">E-mail ou CPF:</label>
+                    <input class="campo" type="email" id="email-cpf" placeholder="nome@gmail.com" autocomplete="email" required>
+                    <label for="senha">Senha:</label>
+                    <input class="campo" type="password" id="senha" placeholder="********" autocomplete="current-password" required>
+                    <a class="recuperar" href="/public/recuperar.html">Esqueceu a senha?</a>
+                    <input class="btn" type="submit" value="Entrar">
                 </form>
                 <div class="log-cad">
                     <p>Não tem uma conta?</p>
-                    <a class="btn-logCad" href="./public/cadastro.html" target="_self">Cadastre-se</a>
+                    <a class="btn-logCad" href="/public/cadastro.html" target="_self">Cadastre-se</a>
                 </div>
             </div>
         </div>
